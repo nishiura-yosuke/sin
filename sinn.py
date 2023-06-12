@@ -9,6 +9,8 @@ data = pd.read_excel("logoform.xlsx")
 def app():
     # アプリのタイトルを表示
     st.title("各種申請")
+    st.caption("必要な申請タグボタンを押して下さい")
+    st.caption("logoフォームで申請できます")
 
     # レイアウトを調整するためにカラムを使用する
     col1, col2 = st.columns(2)
