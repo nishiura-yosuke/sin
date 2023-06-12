@@ -1,19 +1,24 @@
+import webbrowser
 import streamlit as st
-
-st.title("動画ボタン")
-
-if st.button("動画1"):
-        # ボタンが押された場合の処理
-        st.write("動画ボタンが押されました。")
-        # Googleのウェブサイトを開く
-        st.markdown("[Google](<https://www.google.com>)")
+import pandas as pd
 
 
 
 
-if st.button("動画2"):
-        # ボタンが押された場合の処理
-        st.write("動画ボタンが押されました。")
-        # YouTubeの動画リンクを開く
-        st.markdown("[YouTube動画](<https://youtu.be/XbQ06MScArk>)")
+# CSVファイルを読み込み、Pandas DataFrameに保存する
+data = pd.read_excel("logoform.xlsx")
+
+# Streamlitアプリを作成する
+def app():
+    st.title("各種申請")
+
+    # 動画リストを表示する
+    for index, row in data.iterrows():
+        title = row["タイトル"]
+        url = row["URL"]
+        if st.button(title):
+            webbrowser.open_new_tab(url)
+
+if __name__ == "__main__":
+    app()
 
