@@ -18,19 +18,18 @@ def app():
     # 動画リストを表示する
     for index, row in data.iterrows():
         title = row["タイトル"]
-        url = row["URL"]
 
         # 偶数番目の動画は左側のカラムに、奇数番目の動画は右側のカラムにボタンを配置する
         if index % 2 == 0:
             with col1:
                 if st.button(title):
                     # ボタンがクリックされた場合、対応するURLを開く
-                   st.markdown("[YouTube動画](https://logoform.jp/f/T64Xk)")
+                   st.markdown("[YouTube動画申請](https://logoform.jp/f/T64Xk)")
         else:
             with col2:
                 if st.button(title):
                     # ボタンがクリックされた場合、対応するURLを開く
-                   st.markdown("[YouTube動画](https://youtu.be/Wu6Q79qiZpI)")
+                   st.markdown("[データ抽出申請](https://youtu.be/Wu6Q79qiZpI)")
 
 if __name__ == "__main__":
     app()
