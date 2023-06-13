@@ -25,12 +25,12 @@ def app():
             with col1:
                 if st.button(title):
                     # ボタンがクリックされた場合、対応するURLを開く
-                   st.markdown("[タイトル](url)")
+                   st.markdown("[YouTube動画](https://youtu.be/Wu6Q79qiZpI)")
         else:
             with col2:
                 if st.button(title):
                     # ボタンがクリックされた場合、対応するURLを開く
-                   st.markdown("[タイトル](url)")
+                   st.markdown("[YouTube動画](https://youtu.be/Wu6Q79qiZpI)")
 
 if __name__ == "__main__":
     app()
