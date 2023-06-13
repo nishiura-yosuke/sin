@@ -25,7 +25,7 @@ def app():
             with col1:
                 if st.button(title):
                     # ボタンがクリックされた場合、対応するURLを開く
-                   st.markdown("[YouTube動画](https://youtu.be/Wu6Q79qiZpI)")
+                   st.markdown("[YouTube動画](https://logoform.jp/f/T64Xk)")
         else:
             with col2:
                 if st.button(title):
