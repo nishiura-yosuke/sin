@@ -25,12 +25,12 @@ def app():
             with col1:
                 if st.button(title):
                     # ボタンがクリックされた場合、対応するURLを開く
-                    webbrowser.open_new_tab(url)
+                    webbrowser.open(url)
         else:
             with col2:
                 if st.button(title):
                     # ボタンがクリックされた場合、対応するURLを開く
-                    webbrowser.open_new_tab(url)
+                    webbrowser.open(url)
 
 if __name__ == "__main__":
     app()
