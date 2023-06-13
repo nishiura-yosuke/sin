@@ -1,4 +1,3 @@
-import webbrowser
 import streamlit as st
 import pandas as pd
 
